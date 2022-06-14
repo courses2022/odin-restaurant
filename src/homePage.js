@@ -4,6 +4,7 @@ const homePage = () => {
     const element = document.createElement('div');
     
     const img = document.createElement('img');
+    img.classList.add('logo');
     img.src = Logo;
     element.appendChild(img);
 

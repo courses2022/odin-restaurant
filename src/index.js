@@ -4,25 +4,32 @@ import {homePage} from './homePage';
 
 console.log("Hello World");
 
-const content = document.querySelector("#content")
+const content = document.querySelector("#content");
+//content.lastChild.r
 
-content.appendChild(homePage());
-
-function component() {
-    const element = document.createElement('div');
- 
-    // Lodash, now imported by this script
-    element.innerHTML ="<h2>Hello webpack</h2>";
-    element.classList.add('hello');
- 
+function menu() {
+   const element = document.createElement('div');
+   element.classList.add("menu");
    // Add the image to our existing div.
-   const myIcon = new Image();
-   myIcon.src = Logo;
+   const homeButton = document.createElement('button');
+   homeButton.innerHTML = "Home";
+   homeButton.classList.add("menuButton");
+   homeButton.onclick=                              
+   element.appendChild(homeButton);
  
-   element.appendChild(myIcon);
- 
+   const menuButton = document.createElement('button');
+   menuButton.innerHTML = "Menu";
+   menuButton.classList.add("menuButton");
+   element.appendChild(menuButton);
+
+   const contactButton = document.createElement('button');
+   contactButton.innerHTML = "Contact";
+   contactButton.classList.add("menuButton");
+   element.appendChild(contactButton);
+
     return element;
   }
  
- // document.body.appendChild(component());
+ content.appendChild(menu());
 
+ content.appendChild(homePage());

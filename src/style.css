@@ -13,13 +13,38 @@
     padding: 40px;
     max-width: 900px;
     margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   #content{
     text-align: center;
   }
 
-  #content > p {
-    padding: 30px 20px;
+  #content > div:nth-child(1) {
+    
     border: 1px solid darkorange;
+  }
+
+  .logo{
+    width: 100%;
+    height: auto;
+  }
+
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+  .menuButton{
+    background-color: darkorange;
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .menuButton:hover{
+    color: darkorange;
+    background-color: white;
+    width: 100%;
+    padding: 15px 20px;
   }
