@@ -9,10 +9,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: darkorange;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
   }
 
   #content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+  }
+
+  #content > p {
+    padding: 30px 20px;
+    border: 1px solid darkorange;
   }
