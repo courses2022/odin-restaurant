@@ -1,7 +1,12 @@
 import './style.css'
-import Logo from './logo.png'
+import Logo from './logo.png';
+import {homePage} from './homePage';
 
 console.log("Hello World");
+
+const content = document.querySelector("#content")
+
+content.appendChild(homePage());
 
 function component() {
     const element = document.createElement('div');
