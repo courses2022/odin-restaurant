@@ -1,0 +1,18 @@
+.hello {
+    color: red;
+    background: url('./logo.png');
+    
+  }
+
+  body{
+    background-color: #191D1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
