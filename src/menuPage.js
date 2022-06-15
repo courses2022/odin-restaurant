@@ -16,10 +16,14 @@ const menuPage = () => {
     itemName.innerText = "BUL DAK";
     card.appendChild(itemName);
     const itemDesc = document.createElement('p');
-    itemDesc.innerText = "Korean style Beef BBQ sautéed with onion, scrambled egg, house made green salad on steamed rice. Two special sauces, black sauce and white sauce.";
+    itemDesc.innerText = "Korean style Chilli Chicken sautéed with onion, scrambled egg, house made green salad on steamed rice. Two special sauces, black sauce and white sauce.";
     card.appendChild(itemDesc);
 
     const card2 = card.cloneNode(true);
+    card2.children[0].src = BulGogi;
+    card2.children[1].innerText = "BUL GOGI";
+    card2.children[2].innerText = "Korean style Beef BBQ sautéed with onion, scrambled egg, house made green salad on steamed rice. Two special sauces, black sauce and white sauce."
+
     const card3 = card.cloneNode(true);
 
     element.appendChild(card);
