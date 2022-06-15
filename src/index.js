@@ -7,6 +7,22 @@ console.log("Hello World");
 const content = document.querySelector("#content");
 //content.lastChild.r
 
+const displayHome = () =>{
+    content.lastChild.remove();
+    content.appendChild(homePage());    
+ }
+
+ const displayMenu = () =>{
+    content.lastChild.remove();
+    content.appendChild(homePage());    
+ }
+
+ const displayContact = () =>{
+    content.lastChild.remove();
+    content.appendChild(homePage());    
+ }
+
+
 function menu() {
    const element = document.createElement('div');
    element.classList.add("menu");
@@ -14,16 +30,18 @@ function menu() {
    const homeButton = document.createElement('button');
    homeButton.innerHTML = "Home";
    homeButton.classList.add("menuButton");
-   homeButton.onclick=                              
+   homeButton.onclick = displayHome;
    element.appendChild(homeButton);
  
    const menuButton = document.createElement('button');
    menuButton.innerHTML = "Menu";
+   menuButton.onclick = displayMenu;
    menuButton.classList.add("menuButton");
    element.appendChild(menuButton);
 
    const contactButton = document.createElement('button');
    contactButton.innerHTML = "Contact";
+   contactButton.onclick = displayContact;
    contactButton.classList.add("menuButton");
    element.appendChild(contactButton);
 
@@ -33,3 +51,5 @@ function menu() {
  content.appendChild(menu());
 
  content.appendChild(homePage());
+
+ 
