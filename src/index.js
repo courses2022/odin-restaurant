@@ -1,6 +1,8 @@
 import './style.css'
 import Logo from './logo.png';
 import {homePage} from './homePage';
+import {contactPage} from './contactPage';
+import {menuPage} from './menuPage';
 
 console.log("Hello World");
 
@@ -14,12 +16,12 @@ const displayHome = () =>{
 
  const displayMenu = () =>{
     content.lastChild.remove();
-    content.appendChild(homePage());    
+    content.appendChild(menuPage());    
  }
 
  const displayContact = () =>{
     content.lastChild.remove();
-    content.appendChild(homePage());    
+    content.appendChild(contactPage());    
  }
 
 

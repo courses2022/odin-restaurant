@@ -10,7 +10,8 @@
     align-items: center;
     justify-content: center;
     color: darkorange;
-    padding: 40px;
+    padding-top: 40px;
+    width: 100%;
     max-width: 900px;
     margin: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,11 +19,13 @@
 
   #content{
     text-align: center;
+    width: 100%;
   }
 
   #content > div:nth-child(1) {
     
     border: 1px solid darkorange;
+    width: 100%;
   }
 
   .logo{
@@ -33,7 +36,8 @@
   .menu{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    width: 100%;
+    margin : 0px;
   }
 
   .menuButton{
