@@ -1,4 +1,6 @@
 import BulDak from './BulDak.jpeg';
+import BulGogi from './BulGogi.jpeg';
+import Chicken from './Chicken.jpeg';
 
 const menuPage = () => {
     const element = document.createElement('div');
@@ -6,16 +8,13 @@ const menuPage = () => {
     
     const card = document.createElement('div');
     card.classList.add('card');
-
     const img = document.createElement('img');
     img.classList.add('menuImg');
-    img.src = Logo;
+    img.src = BulDak;
     card.appendChild(img);
-
     const itemName = document.createElement('p');
     itemName.innerText = "BUL DAK";
     card.appendChild(itemName);
-
     const itemDesc = document.createElement('p');
     itemDesc.innerText = "Korean style Beef BBQ sautéed with onion, scrambled egg, house made green salad on steamed rice. Two special sauces, black sauce and white sauce.";
     card.appendChild(itemDesc);
